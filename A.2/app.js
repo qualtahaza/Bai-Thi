@@ -4,22 +4,20 @@ let a = [... String1];
 let b = [... String2];
 console.log(a);
 console.log(b);
+
 let mergeString = "";
 
 function merge2String() {
-    for (let i = 0; i < a.length && i < b.length; i++) {
+    for (let i = 0; i < a.length || i < b.length; i++) {
+        if (a[i] == undefined) {
+            a[i] = "";
+        }
+        if (b[i] == undefined) {
+            b[i] = "";
+        }
         mergeString = mergeString + a[i] + b[i];
     }
-    if (a.length > b.length) {
-        mergeString = mergeString + a[a.length - 1]
-
-    }
-    if (a.length < b.length) {
-        mergeString = mergeString + b[b.length - 1]
-
-    }
-
-    console.log(mergeString);
 }
 
-merge2String();
+merge2String()
+console.log(mergeString);
