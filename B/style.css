@@ -1,0 +1,24 @@
+.banner {
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-left: 25%;
+}
+
+.text {
+    width: 50%;
+    height: 50px;
+    background-color: gray;
+    color: white;
+    margin-left: 25%;
+    padding-top: 8px;
+}
+
+.nhapSo {
+    width: 50%;
+    height: 50px;
+    background-color: gray;
+    color: white;
+    margin-left: 25%;
+}
